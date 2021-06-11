@@ -1,0 +1,384 @@
+*{
+    margin: 0;
+    padding: 0; 
+    box-sizing: border-box;
+}
+
+
+/* Privaty */
+.p-t{
+    padding-bottom: 32px ;
+}
+
+.f-o{
+    overflow: hidden !important;
+}
+        
+.row{
+    overflow: hidden;
+    margin-left: -8px;
+    margin-right: -8px;
+}
+
+.col{
+    padding:0 8px ;
+}
+
+.col-third{
+    float:left;
+    padding: 0 8px;
+    list-style: none;
+    width: 33.333333%;
+}
+
+.col-second{
+    width: 50% ;
+    float: left;
+    text-align: left;
+}
+
+.btn{
+    padding:8px 16px;
+    display: inline-block;
+    background-color: black;
+    text-decoration: none;
+    color: white;
+    margin-bottom: 16px;
+}
+
+html{
+    scroll-behavior:smooth;
+    font-family: Arial, Helvetica, sans-serif;
+    margin-right: -8px;
+}
+
+#header{
+    position: fixed;
+    top:0;
+    left: 0;
+    right: 0;
+    height: 46.4px;
+    background-color: black;
+    z-index: 1;
+}
+
+#nav{
+    display: inline-block;
+    position: relative;
+}
+
+#nav li{
+    display: inline-block;
+    position: relative;
+}
+
+#nav>li>a{
+    color: white;
+    line-height: 46.4px;
+    padding: 0 24px;
+    text-transform: uppercase;
+}
+
+#nav li a{
+    text-decoration: none;
+    display: block;
+}
+
+#nav >li:hover >a,
+#nav .subNav li:hover a{
+    color: black;
+    background-color: #ccc;
+}
+
+#nav li:hover .subNav{
+  display: block;
+}
+
+#nav .subNav{
+    display: none;
+    position: absolute;
+    background-color: white;
+    min-width: 160px;
+    /* height: 115.2px;  */
+    box-shadow: 0 0 10px rgba(0, 0, 0, 20%); 
+}
+
+#nav .subNav li{
+    display: block;
+}
+
+#nav .subNav a{
+    color: black;   
+    line-height: 22.4px;
+    padding: 8px 16px;   
+}
+
+#nav .nav-arrow-down{
+    font-size: 14px;
+}
+
+#header .mobile-menu-btn{
+    position: absolute;
+    top:0;
+    right: 0;
+    display: none;
+}
+
+#header .mobile-menu-btn,
+#header .search-btn{
+    float: right;
+    padding: 0 24px;
+}
+#header .mobile-menu-btn,
+#header .search-btn .search-icon{
+    color: white;
+    line-height: 46.4px;
+}
+
+#header .search-btn:hover{
+    background-color: #f44336;
+    cursor: pointer;
+}
+
+#header .mobile-menu-btn:hover {
+    background-color: #ccc;
+}
+
+.mobile-menu-btn:hover .mobile-menu{
+    color: #000;
+}
+
+#slider{
+    background-color: #ccc;
+    margin-top: 46.4px;
+    padding-top: 50%;
+    background: url(../img/Silder/slider1.jpg) top center / contain no-repeat;
+    position: relative;
+}
+
+#slider .slider-content{
+    position: absolute;
+    bottom: 0;
+    color: white;
+    text-align: center;
+    width: 100%;
+    padding-bottom: 47px ;
+}
+
+#slider .content-header{
+    padding-bottom: 25px;
+    font-weight: 500;
+    font-size: 24px;
+}
+
+#slider .content-p{
+    font-size: 15px;
+    text-shadow: 0 0 1px #000;
+}
+    
+#content .section-content{
+     text-align: center;
+     padding: 64px 0; 
+     width: 800px;
+     max-width: 100%;
+     margin-left:auto;
+     margin-right: auto;   
+     padding-left: 16px;
+     padding-right: 16px;  
+}
+
+#content .section-content .section-heading{
+    font-size: 30px;
+    margin-top: 10px;
+    letter-spacing: 4px;
+}
+
+#content .section-content .section-sub-heading{
+    font-size: 15px;
+    margin-top: 25px;
+    font-style: italic;
+    opacity: 0.6; 
+}
+
+#content .section-content .About-text{
+    margin-top: 30px;
+    text-align: justify;
+    line-height: 1.4;    
+}
+
+#content .member-team{
+    margin-top: 47px;   
+}
+  
+#content .member-name{
+    font-size: 15px;
+}
+
+#content .member-image{
+    width: 153.59px;
+    margin-top: 15px; 
+    border-radius: 4px;
+}
+
+.Tour-div{
+    background-color: #000;
+}
+
+.Tour-div .section-heading,
+.Tour-div .section-sub-heading{
+    color:white;
+}
+
+/* Begin: Tour-book */
+.Tour-book{
+    text-align: left;
+    margin-top: 33.4px;
+    background-color: white;
+    list-style: none;
+}
+
+.Tour-book li{
+    font-size: 15px;
+    padding: 8px 16px;
+    color:#757575;
+    border-bottom: 1px solid rgb(221, 221, 221);
+    line-height: 22.4px;
+}
+
+.Month-Book{
+    padding: 0 8px;
+    margin-left: 16px;
+    background-color: rgb(244, 67, 54);
+    color: white;
+    display: inline-block;
+    line-height: 22.4px;
+}
+
+.quality{
+    float:right;
+    background-color: #000;
+    color: white;
+    border-radius: 50%;
+    margin-right: 16px;
+    padding: 0 8px;
+    line-height: 22.4px;
+}
+/* End: Tour-book */
+
+/* places - list*/
+.places{
+    margin-top: 32px;    
+}
+
+.places-img{
+    width: 100%;
+    display: block;
+}
+
+.places-img:hover{
+   opacity:0.6;
+}
+
+.places-text{
+    background-color: white;
+    padding: 0 16px 0 16px;
+    text-align: left;
+    font-size: 15px;
+}
+
+.places-heading{
+    font-size: 15px;
+    margin-bottom: 15px;
+    padding-top: 15px;
+}
+
+.places-time{
+    color: #757575;
+}
+
+.places-descrip{
+    margin-top: 15px;
+    margin-bottom: 15px;
+}
+
+.btn:hover{
+    background-color: #ccc;
+    color: black;
+    cursor: pointer;
+}
+/* end:places-list */
+
+/* Contact-list */
+.col1{
+    font-size: 18px;
+    line-height: 1.4;
+}
+
+.col1 i{
+    width: 35px;
+    display: inline-block;
+    width: 35px;
+}
+.col1 a{
+    color: #0f0fef;
+    opacity: 0.8;
+}
+
+.col1 a:hover{
+    opacity: 1;
+}
+
+.row-contact{
+    margin-top: 47px;
+    margin-right: 0px;
+}
+
+.box-contact{
+    padding: 8px;
+    line-height: 22.4px;
+    display: inline-block;
+    border: 1;
+    width: 100%;
+    border: 1px solid #ccc!important;
+}
+
+.row-message{
+    margin-top: 8px;
+}
+
+.box-send{
+    margin-top: 16px;
+    float: right;
+    border: none;    
+}
+
+.map-img{
+    width: 100%;
+    filter: grayscale(50%)
+}
+
+.icon{
+    display: inline;
+    font-size: 24px;
+    opacity: 0.6;
+    text-decoration: none;
+    color: rgba(0, 0, 0 ,0.9);
+}
+
+.icon:hover{
+    color: rgba(0, 0, 0 ,0.4);
+    cursor: auto;
+}
+
+.body-add{
+    margin-top: 15px;
+    opacity: 0.6;
+    font-size: 15px;
+}
+
+.text-a{
+    cursor: pointer;
+    color: inherit;
+}
+
+

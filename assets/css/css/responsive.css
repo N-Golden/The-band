@@ -1,0 +1,137 @@
+/* PC */
+@media (min-width:64em){
+    
+}
+
+/*Tablet*/
+@media (min-width: 46.25em) and (max-width: 63.9375em){
+    .col1{
+        line-height: 2;
+    }
+}
+
+/* Tablet && moblie*/
+@media(max-width:  63.9375em){
+    .btn{
+        padding: 15px 16px;
+    }
+
+    .box-contact{
+        padding: 12px;
+    }
+    .icon{
+        font-size: 48px;
+        margin: 0 8px;
+    }
+    
+    .body-add .text-a{
+        padding: 12px 0;
+        display: inline-block;
+    }
+    #nav .subNav a{
+        padding: 13px 16px;
+    }
+}
+
+/* Mobile */
+@media (max-width: 46.1875em){
+    .s-w100{   
+        width: 100%;
+    }
+
+    .s-center{
+        text-align: center;
+    }
+
+    html{
+        margin-right: 0px;
+    }
+    #nav{
+        display: block;
+    }
+
+    #nav li{
+        display: block;
+        padding:1px 0px;
+    }
+
+    #nav .subNav{
+        position: initial;
+        background-color:#333;
+    }
+
+    #nav .subNav a{
+        color: white;
+        padding: 13px 41px;
+    }
+
+    #nav>li:first-child{
+        display: inline-block;
+    }
+
+    .About-text{
+        font-size: 15px;
+    }
+
+    #header{
+        overflow: hidden;
+    }
+
+    #header .mobile-menu-btn{
+        display: block;
+    }
+
+    #header .search-btn{
+        display: none;
+    }
+
+    .row{
+        margin: 0px;
+        padding-bottom: 16px;
+    }
+
+    .col{
+        padding: 0;
+    }
+
+    .row .member-item{
+        width: 100%;
+        padding:0px;
+        margin-bottom: 16px;
+    }
+
+    .col-third p{
+        margin-top: 15px;
+    }
+
+    #content .member-image{
+        width: 60%;
+        margin-bottom: 15px;
+    }
+
+    .Tour-div .places{
+        padding: 32px 0;
+    }
+    
+    .section-sub-heading{
+        margin-bottom: 15px;
+    }
+
+    #contact .row-contact{
+        padding:32px 0;
+    }
+    
+    .row-contact .col1{
+        margin-bottom: 32px;
+        line-height: 1.7;
+    }
+
+    .col-second .row{
+        padding-bottom: 8px;
+    }
+
+    .col-second .row-message{
+        padding-bottom: 0;
+    }
+
+}
